@@ -1,0 +1,121 @@
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Estilo de la cabecera */
+header {
+  background-color: #1e81b0;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.header-content h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.header-image {
+  max-width: 200px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+/* Sección "Acerca de mí" */
+#acerca-de {
+  padding: 20px;
+  background-color: #fff;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#acerca-de h2 {
+  color: #1e81b0;
+}
+
+/* Sección "Servicios" */
+#servicios {
+  padding: 20px;
+  background-color: #fff;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#servicios h2 {
+  color: #1e81b0;
+}
+
+#servicios ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+/* Sección "Contáctame" */
+#contacto {
+  padding: 20px;
+  background-color: #fff;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contacto h2 {
+  color: #1e81b0;
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: #1e81b0;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+  font-size: 1em;
+}
+
+form button:hover {
+  background-color: #155d7c;
+}
+
+/* Pie de página */
+footer {
+  background-color: #1e81b0;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 5px 0;
+}

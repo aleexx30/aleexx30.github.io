@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Domina ChatGPT con este curso práctico que optimiza tu productividad y te enseña a automatizar tareas. Aprende a usar ChatGPT como un profesional.">
+    <meta name="author" content="Alejandro Álvarez">
+    <meta name="keywords"
+        content="ChatGPT, curso, productividad, inteligencia artificial, prompts, aprendizaje, automatización">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.tuweb.com/curso-chatgpt">
+    <title>Curso de ChatGPT - Domina la Inteligencia Artificial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        color1: '#0086e8',
+                        color2: '#21abfb',
+                        color3: '#f1f1f1',
+                        color4: '#ff0f0e',
+                        color5: '#ffffff'
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+                body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        body.dark-mode {
+            background-color: #06080e;
+            color: #000000;
+        }
+
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #0086e8;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+        }
+
+        .theme-toggle:hover {
+            background-color: #21fbe9;
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        [data-theme="dark"] {
+            background-color: #000000;
+            color: #cbd5e0;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #0086e8, #21abfb);
+        }
+
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1s ease-in forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+
+
+
+<button class="theme-toggle" id="theme-toggle">
+    <i class="fas fa-moon"></i>
+</button>
+<script>
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    // Verificar el tema guardado en localStorage
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    if (savedTheme === 'dark') {
+        body.classList.add('dark-mode');
+        themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+    }
+
+    // Cambiar el tema al hacer clic en el botón
+    themeToggle.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+        const isDarkMode = body.classList.contains('dark-mode');
+        localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+        themeToggle.innerHTML = isDarkMode ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+    });
+</script>
+
+<body class="bg-color3 text-gray-800" data-theme="light">
+    <header class="gradient-bg text-white py-20 px-6 text-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-color1 to-color2 opacity-50"></div>
+        <div class="relative z-10 fade-in">
+            <h1 class="text-5xl font-extrabold mb-4">Domina ChatGPT en Tiempo Récord 🚀</h1>
+            <p class="mt-4 text-xl max-w-2xl mx-auto">Aprende a usar ChatGPT como un profesional y propulsa tu
+                productividad con este curso práctico.</p>
+            <a href="https://www.tuweb.com/comprar" target="_blank" rel="noopener noreferrer"
+                class="mt-8 inline-block bg-color4 text-white px-8 py-4 rounded-lg shadow-lg hover:bg-red-600 transition duration-300 hover-scale">
+                ¡Compra el Curso Ahora! 💻
+            </a>
+        </div>
+    </header>
+
+    
+    <section class="py-20 px-6">
+        <h2 class="text-3xl font-bold text-center text-color1 mb-12">¿Qué vas a aprender? 📚</h2>
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition duration-300 hover-scale">
+                <div class="text-center mb-6">
+                    <span class="text-5xl">💡</span>
+                </div>
+                <h3 class="text-xl font-semibold mb-4">Domina los Fundamentos</h3>
+                <p class="mt-2 text-gray-600">Entiende cómo funciona ChatGPT y cómo sacarle el máximo provecho.</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition duration-300 hover-scale">
+                <div class="text-center mb-6">
+                    <span class="text-5xl">🚀</span>
+                </div>
+                <h3 class="text-xl font-semibold mb-4">Aplica en Casos Reales</h3>
+                <p class="mt-2 text-gray-600">Descubre ejemplos prácticos para usarlo en tu día a día.</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition duration-300 hover-scale">
+                <div class="text-center mb-6">
+                    <span class="text-5xl">⚡</span>
+                </div>
+                <h3 class="text-xl font-semibold mb-4">Optimiza tu Productividad</h3>
+                <p class="mt-2 text-gray-600">Aprende a crear prompts efectivos y a automatizar tareas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 bg-color3">
+        <h2 class="text-3xl font-bold text-center text-color1 mb-12">¿Quién lo enseña? 🎓</h2>
+        <div class="mt-8 flex flex-col md:flex-row items-center md:items-start gap-8 max-w-4xl mx-auto">
+            <img src="PC.jpg" alt="Foto del instructor Alejandro Álvarez"
+                class="rounded-full w-48 h-48 border-4 border-color1 object-cover">
+            <div class="text-center md:text-left">
+                <h3 class="text-2xl font-semibold mb-4">Alejandro Álvarez</h3>
+                <p class="mt-2 text-gray-600">Estudiante de ASIR en formación de aplicaciones IA.</p>
+                <div class="mt-6">
+                    <a href="https://www.linkedin.com/in/alejandro-alvarez" target="_blank" rel="noopener noreferrer"
+                        class="text-color1 underline hover:text-color2">Conéctate en LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6">
+        <h2 class="text-3xl font-bold text-center text-color1 mb-12">Testimonios de Estudiantes 🌟</h2>
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <div class="bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition duration-300 hover-scale">
+                <p class="text-lg">"Este curso cambió mi manera de trabajar. Ahora puedo usar ChatGPT para automatizar
+                    tareas repetitivas. ¡Altamente recomendado!"</p>
+                <span class="block mt-4 font-bold">- María López</span>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition duration-300 hover-scale">
+                <p class="text-lg">"Aprendí a usar ChatGPT desde cero. Me ayudó a mejorar mi productividad y a crear
+                    contenido en minutos."</p>
+                <span class="block mt-4 font-bold">- Pedro González</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 bg-color3">
+        <h2 class="text-3xl font-bold text-center text-color1 mb-12">Preguntas Frecuentes ❓</h2>
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <div class="bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition duration-300 hover-scale">
+                <h3 class="text-xl font-semibold mb-4">¿Cuánto tiempo dura el curso?</h3>
+                <p class="mt-2 text-gray-600">El curso tiene una duración de 4 semanas con lecciones diarias.</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition duration-300 hover-scale">
+                <h3 class="text-xl font-semibold mb-4">¿Necesito experiencia previa?</h3>
+                <p class="mt-2 text-gray-600">No necesitas experiencia previa, el curso empieza desde lo básico.</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition duration-300 hover-scale">
+                <h3 class="text-xl font-semibold mb-4">¿Qué pasa si tengo dudas?</h3>
+                <p class="mt-2 text-gray-600">Tendrás soporte personalizado durante todo el curso.</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition duration-300 hover-scale">
+                <h3 class="text-xl font-semibold mb-4">¿El curso tiene certificación?</h3>
+                <p class="mt-2 text-gray-600">Sí, recibirás un certificado de finalización al completar el curso.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 bg-color3">
+        <h2 class="text-3xl font-bold text-center text-color1 mb-12">Contacto 📩</h2>
+        <div class="mt-4 max-w-2xl mx-auto">
+            <form class="bg-white p-8 rounded-lg shadow-md" action="http://localhost:3000/send-message" method="POST">
+                <label for="name" class="block text-sm font-medium mb-2">Nombre:</label>
+                <input type="text" id="name" name="name" class="w-full mt-2 mb-6 p-3 border rounded-lg" required
+                    aria-required="true" placeholder="Ingresa tu nombre">
+
+                <label for="email" class="block text-sm font-medium mb-2">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" class="w-full mt-2 mb-6 p-3 border rounded-lg" required
+                    aria-required="true" placeholder="ejemplo@correo.com">
+
+                <label for="subject" class="block text-sm font-medium mb-2">Asunto:</label>
+                <input type="text" id="subject" name="subject" class="w-full mt-2 mb-6 p-3 border rounded-lg" required
+                    aria-required="true" placeholder="Asunto del mensaje">
+
+                <label for="message" class="block text-sm font-medium mb-2">Mensaje:</label>
+                <textarea id="message" name="message" class="w-full mt-2 mb-6 p-3 border rounded-lg" rows="5" required
+                    aria-required="true" placeholder="Escribe tu mensaje"></textarea>
+
+                <button type="submit"
+                    class="bg-color1 text-white px-8 py-3 rounded-lg hover:bg-color2 transition duration-300 w-full md:w-auto">
+                    Enviar
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-8 px-6 bg-color1 text-white text-center">
+        <p>© 2025 Curso de ChatGPT. Todos los derechos reservados.</p>
+        <div class="mt-4 flex justify-center space-x-6">
+            <a href="#" class="hover:text-color2" aria-label="Términos de servicio">Términos</a>
+            <a href="#" class="hover:text-color2" aria-label="Política de privacidad">Privacidad</a>
+            <a href="#" class="hover:text-color2" aria-label="Contacto">Contacto</a>
+        </div>
+    </footer>
+</body>
+
+</html>
